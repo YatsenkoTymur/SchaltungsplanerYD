@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Width="1280" Height="720">
     <Grid>
+
         <!--<Rectangle 
             HorizontalAlignment="Left" 
             Width="1280" Height="720" 
@@ -14,7 +15,14 @@
             Stroke="Black" Fill="Black"
             VerticalAlignment="Top" 
         />-->
-        
 
+        <Frame 
+            Name="MainFrame"
+            Source="MainPage.xaml">
+            <!--<Frame.LayoutTransform>
+                <RotateTransform Angle="6">
+                </RotateTransform>
+            </Frame.LayoutTransform>-->
+        </Frame>
     </Grid>
 </Window>
