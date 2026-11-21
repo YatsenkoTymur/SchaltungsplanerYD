@@ -31,7 +31,7 @@ namespace SchaltungsplanerYD_WPF
             TestLabel.Content = a;
             if (a>20)
             {
-                NavigationService.Navigate(SharedState.Pages["MainPage"]);
+                NavigationService.Navigate(new MainPage());
             }
         }
     }

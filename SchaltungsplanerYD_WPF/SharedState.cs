@@ -8,7 +8,7 @@ namespace SchaltungsplanerYD_WPF
     static internal class SharedState
     {
         static internal Dictionary<string, Page> Pages = new Dictionary<string, Page> {
-            { "MainPage",null },
+            //{ "MainPage",null },
             { "TestPage",null }
         };
     }

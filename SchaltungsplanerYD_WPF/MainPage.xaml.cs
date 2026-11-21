@@ -21,7 +21,7 @@ namespace SchaltungsplanerYD_WPF
         public MainPage()
         {
             InitializeComponent();
-            SharedState.Pages["MainPage"] = this;
+            //SharedState.Pages["MainPage"] = this;
         }
 
         private void Button1_OnClick(object sender, RoutedEventArgs e)
