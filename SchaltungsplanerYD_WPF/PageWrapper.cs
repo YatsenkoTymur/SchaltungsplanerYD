@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Controls;
+using System.Windows.Shapes;
+using System.Windows.Media;
 
 namespace SchaltungsplanerYD_WPF
 {
