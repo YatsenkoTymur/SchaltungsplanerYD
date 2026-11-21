@@ -10,7 +10,7 @@
       Background="Blue"
       Title="TestPage">
 
-    <Grid MouseLeftButtonDown="TestPage_OnMouseLeftButtonDown">
+    <Grid MouseLeftButtonDown="TestPage_OnMouseLeftButtonDown" Margin="234,139,0,0">
         <Label
             x:Name="TestLabel"
             Content="Label" 
