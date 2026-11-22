@@ -19,23 +19,22 @@ namespace SchaltungsplanerYD_WPF
     public partial class TestPage : Page
     {
         int a = 0;
-        WorkspaceSystem workspace;
+        Workspace workspace;
         public TestPage()
         {
             InitializeComponent();
             SharedState.Pages["TestPage"] = this;
-            workspace = new WorkspaceSystem( new PageWrapper(this));
-            Content = workspace.Content;
+            workspace = new Workspace(WorkspaceCanvas);
         }
 
         private void TestPage_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            a++;
-            TestLabel.Content = a;
-            if (a>20)
-            {
-                NavigationService.Navigate(new MainPage());
-            }
+            //a++;
+            //TestLabel.Content = a;
+            //if (a>20)
+            //{
+            //    NavigationService.Navigate(new MainPage());
+            //}
         }
     }
 }
