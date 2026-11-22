@@ -24,7 +24,7 @@ namespace SchaltungsplanerYD_WPF
         {
             InitializeComponent();
             SharedState.Pages["TestPage"] = this;
-            workspace = new Workspace(WorkspaceCanvas);
+            workspace = new Workspace(WorkspaceCanvas,DebugLabel);
         }
 
         private void TestPage_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)

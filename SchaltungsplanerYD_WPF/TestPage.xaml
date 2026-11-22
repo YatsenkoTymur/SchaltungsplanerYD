@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Width="1280" Height="720"
-      Background="Blue"
+      Background="LightYellow"
       Title="TestPage">
 
     <!--<Grid MouseLeftButtonDown="TestPage_OnMouseLeftButtonDown" Margin="234,139,0,0">
@@ -21,7 +21,16 @@
     </Grid>-->
     <Grid>
         <Canvas
-            x:Name="WorkspaceCanvas">
+            x:Name="WorkspaceCanvas"
+            Background="Transparent">
         </Canvas>
+        <TextBlock
+            x:Name="DebugLabel"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            FontSize="30"
+            Foreground="White"
+            Background="Black">
+        </TextBlock>
     </Grid>
 </Page>
