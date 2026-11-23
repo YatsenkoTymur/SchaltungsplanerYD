@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchaltungsplanerYD_WPF.Components;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -25,6 +26,7 @@ namespace SchaltungsplanerYD_WPF
             InitializeComponent();
             SharedState.Pages["TestPage"] = this;
             workspace = new Workspace(WorkspaceCanvas,DebugLabel);
+            new Resistor(47000);
         }
 
         private void TestPage_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)

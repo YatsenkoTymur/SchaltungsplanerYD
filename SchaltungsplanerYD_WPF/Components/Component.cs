@@ -26,5 +26,6 @@ namespace SchaltungsplanerYD_WPF
                 Tag = this
             };
         }
+        public Component() { }
     }
 }
