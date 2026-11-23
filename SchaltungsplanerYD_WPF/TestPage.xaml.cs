@@ -20,11 +20,13 @@ namespace SchaltungsplanerYD_WPF
     {
         int a = 0;
         Workspace workspace;
+        Toolbox toolbox;
         public TestPage()
         {
             InitializeComponent();
             SharedState.Pages["TestPage"] = this;
             workspace = new Workspace(WorkspaceCanvas,DebugLabel);
+            toolbox = new(Toolbox);
         }
 
         private void TestPage_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
