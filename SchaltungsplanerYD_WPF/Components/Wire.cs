@@ -1,14 +1,19 @@
-﻿using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Shapes;
-using System.Windows.Media;
+﻿using System.Windows.Shapes;
+using System.Windows;
 
 namespace SchaltungsplanerYD_WPF.Components
 {
-    class Wire : Component
+    internal class Wire : UIElement
     {
-        public Wire(Point iPos, Workspace iWorkspace) :
-            base(iPos, iWorkspace.GridUnit, iWorkspace, Brushes.Silver)
-        { }
+        public Rectangle Rect;
+        public Component ConnectedComp1, ConnectedComp2;
+        public bool Selected;
+
+        internal Wire(Rectangle iRect, Component iConnectedComp1, Component iConnectedComp2)
+        {
+            Rect = iRect;
+            ConnectedComp1 = iConnectedComp1;
+            ConnectedComp2 = iConnectedComp2;
+        }
     }
 }

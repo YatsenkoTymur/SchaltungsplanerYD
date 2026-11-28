@@ -21,8 +21,10 @@
     </Grid>-->
     <Grid>
         <Canvas
-            x:Name="WorkspaceCanvas"
-            Background="Transparent" Margin="188,0,0,0"/>
+            x:Name="WorkspaceCanvas" 
+            Focusable="True"
+            Background="Transparent" 
+            Margin="188,0,0,0"/>
         <TextBlock
             x:Name="DebugLabel"
             VerticalAlignment="Top"

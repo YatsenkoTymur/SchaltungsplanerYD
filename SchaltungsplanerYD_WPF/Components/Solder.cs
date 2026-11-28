@@ -1,0 +1,14 @@
+﻿using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Shapes;
+using System.Windows.Media;
+
+namespace SchaltungsplanerYD_WPF.Components
+{
+    class Solder : Component
+    {
+        public Solder(Point iPos, Workspace iWorkspace) :
+            base(iPos, iWorkspace.GridUnit, iWorkspace, Brushes.Silver)
+        { }
+    }
+}
